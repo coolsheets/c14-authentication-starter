@@ -1,0 +1,17 @@
+{
+  "name": "c13-authentication-starter",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "install": "npm run install:server",
+    "install:server": "cd server && npm install && cd ..",
+    "start": "npm run start:server",
+    "start:server": "cd server && npm start && cd .."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7"
+  }
+}

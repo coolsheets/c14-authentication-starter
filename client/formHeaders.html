@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Authentication Starter</title>
+        <link rel="stylesheet" type="text/css" href="site.css" />
+    </head>
+    <body>
+        <h1>HTTP Basic with Client-Side Form</h1>
+        <div>
+            <h2>1 - Set up and test login credentials with (/formbasic/login)</h2>
+            <div>Username</div>
+            <input id="username" />
+            <div>Password</div>
+            <input id="password" type="password" />
+            <button onclick="formBasicLogin()"> Login</button>
+         </div>
+         <div>
+            <h2>2 - Check the browser console to see the headers (/formbasic/balance)</h2>
+            <button onclick="getBalance()"> Fetch Account Data </button>
+            <textarea id="result" rows="4" cols="50"></textarea>
+         </div>
+         <div>
+            <h2>3 - Log out by simply clearing the credentials from memory </h2>
+            <button onclick="formBasicLogout()"> Logout Basic </button>
+         </div>
+         
+         <script src="formHeaders.js"></script>
+    </body>
+</html>

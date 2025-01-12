@@ -1,0 +1,22 @@
+body {
+    font-family: 'sans-serif';    
+}
+
+a {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+
+textarea {
+    display: block;
+}

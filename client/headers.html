@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Authentication Starter</title>
+        <link rel="stylesheet" type="text/css" href="site.css" />
+    </head>
+    <body>
+        <h1>Header Based Authentication</h1>
+        <div>
+            <h2>0 - See if you are logged in (/basic/currentUser)</h2>
+            <div>
+                Because the browser may remember your credential from last
+                time you were here, make a round trip to the server to see
+                if there is already a credential. 
+            </div>
+            <button onclick="getCurrentUser()">Check Current User</button>
+            <textarea id="userResult" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <h2>1 - Login (/basic/login)</h2>
+            <div>
+                Hit a protected method on the server to cause the browser to prompt 
+                for credentials.
+            </div>
+            <button onclick="login()"> Login </button>
+        </div>
+        <div>
+            <h2>2 - Check the browser console to see the headers (/basic/balance)</h2>
+            <button onclick="getBalance()"> Fetch Account Data </button>
+            <textarea id="result" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <h2>3 - Log out by calling an endpoint that always failz authentication (/basic/logout)</h2>
+            <button onclick="basicLogout()"> Logout Basic </button>
+        </div>
+         
+        <script src="headers.js"></script>
+        </body>
+</html>
